@@ -22,6 +22,7 @@ url = "https://volcdn1.kuangshi.fun/vip/app/audio/ios/kyb/2024/04/2024_04_17_18_
 filename = "downloaded_file.wav"
 download_mp3(url, filename)
 
+print("recognize time:-", start)
 
 audio_file= open("downloaded_file.wav", "rb")
 transcription = client.audio.transcriptions.create(
