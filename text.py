@@ -2,6 +2,7 @@
 from openai import OpenAI
 import time
 import os
+import openai
 
 # Get the current directory
 current_directory = os.getcwd()
@@ -19,15 +20,21 @@ print(file_content)
 key = file_content.rstrip("\n")
 
 
-def grammary(client, text):
+def grammary(key, text):
 
   start = time.time()
   print(start)
   
-# Use the OpenAI API to correct the sentence
-  response = client.Completion.create(
+  # Set your OpenAI API key
+  openai.api_key = key
+
+  # Define the sentence you want to correct
+  input_sentence = text
+
+  # Use the OpenAI API to correct the sentence
+  response = openai.Completion.create(
       engine="text-davinci-003",  # Choose the engine you want to use
-      prompt=text,
+      prompt=input_sentence,
       max_tokens=50  # Adjust as needed
   )
 
@@ -50,4 +57,4 @@ def grammary(client, text):
 if __name__ == '__main__':
   arg1 = input("Enter the first argument: ")
   client = OpenAI(api_key=os.environ.get(key, key))
-  grammary(client, arg1)
+  grammary(key, arg1)
