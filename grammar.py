@@ -54,6 +54,7 @@ def grammary(client, text):
 
   content = completion.choices[0].message.content
 
+  print(content)
 
   # Specify the file path
   file_path = "output.txt"
