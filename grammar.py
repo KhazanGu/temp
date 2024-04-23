@@ -63,5 +63,5 @@ def grammary(client, text):
 
 if __name__ == '__main__':
   arg1 = input("Enter the first argument: ")
-  client = OpenAI(api_key=os.environ.get("sk-", "sk-"))
+  client = OpenAI(api_key=os.environ.get(file_content, file_content))
   grammary(client, arg1)
