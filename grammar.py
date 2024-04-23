@@ -11,7 +11,7 @@ def grammary(client, text):
   
   content2 = "Please output the result with a JSON object format like: {\"content\": \"\", \"recommend\": \"\", \"explain\": \"\"}"
   
-  content3 = "the value of the content key should be the \"" + text + "\" 
+  content3 = "the value of the content key should be the \"" + text + "\"" 
 
   content4 = "the value of the recommend key should be a sentence with the correct grammar"
 
