@@ -48,8 +48,7 @@ def grammary(client, text):
     file.write(content + '\n')  #
 
 
-  def test()
-    client = OpenAI(api_key=os.environ.get("sk-", "sk-"))
-    arg1 = input("Enter the first argument: ")
-    grammary(client, arg1)
-
+if __name__ == '__main__':
+  arg1 = input("Enter the first argument: ")
+  client = OpenAI(api_key=os.environ.get("sk-", "sk-"))
+  grammary(client, arg1)
