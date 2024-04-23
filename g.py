@@ -4,6 +4,7 @@ from openai import OpenAI
 import time
 import os
 import json
+import gra
 
 client = OpenAI(api_key=os.environ.get("sk-", "sk-"))
 
@@ -30,5 +31,9 @@ content = completion.choices[0].message.content
 obj = json.loads(content)
 
 sentences = obj["sentences"]
+
+for element in sentences:
+    grammar(client, element)
+
 
 print(sentences)
