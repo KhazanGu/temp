@@ -1,5 +1,3 @@
-# import the OpenAI Python library for calling the OpenAI API
-# import the OpenAI Python library for calling the OpenAI API
 from openai import OpenAI
 import time
 import os
@@ -12,7 +10,7 @@ start = time.time()
 print(start)
 
 beg = [
-    {"role": "user", "content": "Please help me generate a JSON object that contains 100 sentences that are all incorrect grammar."},
+    {"role": "user", "content": "Please help me generate a JSON object that contains 100 sentences that are all incorrect grammar."},  
   ]
 
 print(beg)
@@ -30,10 +28,12 @@ content = completion.choices[0].message.content
 
 obj = json.loads(content)
 
+print(obj)
+
 sentences = obj["sentences"]
 
 for element in sentences:
-    grammary(client, element)
+    gra.grammary(client, element)
 
 
-print(sentences)
+#print(sentences)
