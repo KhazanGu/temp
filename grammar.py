@@ -46,3 +46,9 @@ def grammary(client, text):
   with open(file_path, 'a') as file:
     # Iterate over the strings and write each one to the file
     file.write(content + '\n')  #
+
+
+  def test()
+    arg1 = input("Enter the first argument: ")
+    grammary(arg1)
+
