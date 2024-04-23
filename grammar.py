@@ -4,6 +4,7 @@ import os
 
 # Get the current directory
 current_directory = os.getcwd()
+print(current_directory)
 
 def grammary(client, text):
 
