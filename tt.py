@@ -9,9 +9,9 @@ start = time.time()
 print(start)
 
 beg = [
-    {"role": "system", "content": "你是英语教师"},
-    {"role": "user", "content": "我正在练习英语，当前的对话场景是旅游出行，我们的对话都应该是中文,我们的对话都应该是旅游相关的，如果我的提问与旅游无关的请你提醒我。"},
-    {"role": "user", "content": "请你模仿被求助人，说一句少于30字的开场问候"}
+    {"role": "system", "content": "You are an english teacher"},
+    # {"role": "user", "content": "Please help me check the grammar about "I would like have one cup of office.""},
+    {"role": "user", "content": "Please help me recommend a sentence greate than "I would like have one cup of office."", and explain why},
   ]
 
 print(beg)
