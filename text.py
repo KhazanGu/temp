@@ -35,13 +35,16 @@ def grammary(key, text):
   response = openai.Completion.create(
       engine="text-davinci-003",  # Choose the engine you want to use
       prompt=input_sentence,
-      max_tokens=50  # Adjust as needed
+      max_tokens=50,  # Adjust as needed
+      n=1,  # Number of completions to generate
+      stop=None  # Condition to stop generation
   )
+
+  # Extract the corrected sentence from the API response
+  corrected_sentence = response['choices'][0]['text'].strip()
 
   end = time.time()
   print(end)
-
-  corrected_sentence = response.choices[0].text.strip()
 
   print(corrected_sentence)
 
