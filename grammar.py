@@ -27,7 +27,7 @@ def grammary(client, text):
   
   content2 = "Please output the result with a JSON object format like: {\"correct\": \"\", \"error\": \"\", \"error_words\": \"\"}"
 
-  content3 = "If the sentence has incorrect grammar, the value of the correct key should be a sentence with the proper grammar, else the value should be an empty string." 
+  content3 = "If the sentence has incorrect grammar, the value of the correct key should be a sentence with the correct grammar, else the value should be an empty string." 
 
   content4 = "If the sentence has incorrect grammar, the value of the error key should be the reason for incorrect grammar, else the value should be an empty string." 
 
