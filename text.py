@@ -24,10 +24,13 @@ def grammary(client, text):
   print(start)
 
   content1 = "Please point out errors about \"" + text + "\" in a JSON object."
+    
+  content2 = "The JSON object should contain \"errorType\", \"errorDescription\", \"correction keys\"."
 
   beg = [
       {"role": "system", "content": "You are an english teacher"},
       {"role": "user", "content": content1},
+      {"role": "user", "content": content2},
     ]
   
   print(beg)
