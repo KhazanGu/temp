@@ -20,33 +20,23 @@ print(file_content)
 key = file_content.rstrip("\n")
 
 
-def grammary(key, text):
+def grammary(client, text):
 
   start = time.time()
   print(start)
   
-  # Set your OpenAI API key
-  openai.api_key = key
-
-  # Define the sentence you want to correct
-  input_sentence = text
-
-  # Use the OpenAI API to correct the sentence
-  response = openai.Completion.create(
-      engine="text-davinci-003",  # Choose the engine you want to use
-      prompt=input_sentence,
-      max_tokens=50,  # Adjust as needed
-      n=1,  # Number of completions to generate
-      stop=None  # Condition to stop generation
+  completion = client.chat.completions.create(
+    model="gpt-3.5-turbo-1106",
+    response_format={ "type": "json_object" },
+    messages=beg
   )
-
-  # Extract the corrected sentence from the API response
-  corrected_sentence = response['choices'][0]['text'].strip()
-
+  
   end = time.time()
   print(end)
 
-  print(corrected_sentence)
+  content = completion.choices[0].message.content
+
+  print(content)
 
 #   # Specify the file path
 #   file_path = "output.txt"
@@ -60,4 +50,4 @@ def grammary(key, text):
 if __name__ == '__main__':
   arg1 = input("Enter the first argument: ")
   client = OpenAI(api_key=os.environ.get(key, key))
-  grammary(key, arg1)
+  grammary(client, arg1)
