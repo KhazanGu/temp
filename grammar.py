@@ -49,6 +49,7 @@ def grammary(client, text):
 
 
   def test()
+    client = OpenAI(api_key=os.environ.get("sk-", "sk-"))
     arg1 = input("Enter the first argument: ")
-    grammary(arg1)
+    grammary(client, arg1)
 
