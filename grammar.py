@@ -29,7 +29,7 @@ def grammary(client, text):
 
   content3 = "If the sentence is incorrect, the value of the correct key should be a correct sentence, else the value should be an empty string." 
 
-  content4 = "If the sentence is incorrect, the value of the error key should be the reason for incorrect, else the value should be an empty string." 
+  content4 = "If the sentence is incorrect, the value of the error key should in Simplified Chinese be the reason for incorrect, else the value should be an empty string." 
 
   content5 = "If the sentence is incorrect, the value of the error_words key should be those incorrect words, else the value should be an empty string." 
 
