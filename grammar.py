@@ -27,11 +27,11 @@ def grammary(client, text):
   
   content2 = "Please output the result with a JSON object format like: {\"correct\": \"\", \"error\": \"\", \"error_words\": \"\"}"
 
-  content3 = "If the sentence is correct, the value of the key named \"correct\" should be an empty string else should be a correct sentence." 
+  content3 = "The value of the key name \"correct\" should be an empty string if the sentence is correct else should be a correct sentence." 
 
-  content4 = "If the sentence is correct, the value of the key named \"error\" should be an empty string else should be the reason for incorrect and must be in Simplified Chinese."
+  content4 = "The value of the key name \"error\" should be an empty string if the sentence is correct else should be the reason for incorrect and must be in Simplified Chinese."
 
-  content5 = "If the sentence is correct, the value of the key named \"error_words\" should be an empty string else should be those incorrect words."
+  content5 = "The value of the key name \"error_words\" should be an empty string if the sentence is correct else should be those incorrect words."
 
   beg = [
       {"role": "system", "content": "You are an english teacher"},
