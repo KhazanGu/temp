@@ -33,7 +33,7 @@ obj = json.loads(content)
 sentences = obj["sentences"]
 
 for element in sentences:
-    grammar(client, element)
+    grammary(client, element)
 
 
 print(sentences)
