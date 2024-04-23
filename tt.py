@@ -10,9 +10,12 @@ print(start)
 
 beg = [
     {"role": "system", "content": "You are an english teacher"},
-    # {"role": "user", "content": "Please help me check the grammar about "I would like have one cup of office.""},
-    {"role": "user", "content": "Please help me recommend a sentence greate than "I would like have one cup of office."", and explain why},
+    {"role": "user", "content": "Please help me recommend a sentence better than \"I would like have one cup of office.\", and explain why in chinese."},
+    {"role": "user", "content": "Please output the result with the JSON formate like: {\"content\": \"user\", \"recommend\": \"server\", \"explain\": \"reasion\"}, the vaule of the content key should be the \"I would like have one cup of office\", the vaule of the recommend key should be the recommend sentence, the vaule of the explain key should be the explain sentence."} 
   ]
+
+
+
 
 print(beg)
 
