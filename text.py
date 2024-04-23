@@ -23,10 +23,8 @@ def grammary(client, text):
   start = time.time()
   print(start)
 
-  content1 = "Please point out errors about \"" + text + "\" in a JSON object."
+  content1 = "Please point out the error in \"" + text + "\" and output as a JSON object if exist."
     
-  #content2 = "The JSON object should contain those \"errorType\", \"errorDescription\", \"correction\" keys."
-
   beg = [
       {"role": "user", "content": content1},
       #{"role": "user", "content": content2},
