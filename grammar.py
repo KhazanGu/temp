@@ -5,6 +5,8 @@ import os
 # Get the current directory
 current_directory = os.getcwd()
 print(current_directory)
+parent_directory = os.path.dirname(current_directory)
+print(parent_directory)
 
 def grammary(client, text):
 
