@@ -23,7 +23,7 @@ def grammary(client, text):
   start = time.time()
   print(start)
 
-  content1 = "Please help me correct a sentence if it has incorrect grammar \"" + text + "\""
+  content1 = "Please help me correct a sentence if it has incorrect grammar about \"" + text + "\""
   
   content2 = "Please output the result with a JSON object format like: {\"correct\": \"\", \"error\": \"\", \"error_words\": \"\"}"
 
