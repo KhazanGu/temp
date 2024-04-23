@@ -25,12 +25,11 @@ def grammary(client, text):
 
   content1 = "Please point out errors about \"" + text + "\" in a JSON object."
     
-  content2 = "The JSON object should contain those \"errorType\", \"errorDescription\", \"correction\" keys."
+  #content2 = "The JSON object should contain those \"errorType\", \"errorDescription\", \"correction\" keys."
 
   beg = [
-      {"role": "system", "content": "You are an english teacher"},
       {"role": "user", "content": content1},
-      {"role": "user", "content": content2},
+      #{"role": "user", "content": content2},
     ]
   
   print(beg)
