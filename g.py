@@ -10,7 +10,8 @@ start = time.time()
 print(start)
 
 beg = [
-    {"role": "user", "content": "Please help me generate a JSON object that contains 100 sentences that 50 sentences are incorrect grammar and 50 sentences are correct grammar."},  
+    {"role": "user", "content": "Please help me generate a JSON object that contains 100 sentences that 50 sentences are incorrect grammar and 50 sentences are the correct grammar."}, 
+    {"role": "user", "content": "The JSON object has two keys, one is \"correct\", another one is \"incorrect\"."},  
   ]
 
 print(beg)
