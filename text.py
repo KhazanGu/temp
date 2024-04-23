@@ -1,8 +1,6 @@
-
 from openai import OpenAI
 import time
 import os
-import openai
 
 # Get the current directory
 current_directory = os.getcwd()
@@ -24,6 +22,15 @@ def grammary(client, text):
 
   start = time.time()
   print(start)
+
+  content1 = "Please point out errors about \"" + text + "\" in a JSON object."
+
+  beg = [
+      {"role": "system", "content": "You are an english teacher"},
+      {"role": "user", "content": content1},
+    ]
+  
+  print(beg)
   
   completion = client.chat.completions.create(
     model="gpt-3.5-turbo-1106",
