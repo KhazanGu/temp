@@ -5,12 +5,16 @@ import os
 # Get the current directory
 current_directory = os.getcwd()
 parent_directory = os.path.dirname(current_directory)
+file_path = os.path.join(parent_directory, "key.txt")
+
 file_content = ""
 
-with open('key.txt', 'r') as file:
+with open(file_path, 'r') as file:
     # Read the entire file content into a string
     file_content = file.read()
-  
+
+print(file_content)
+
 def grammary(client, text):
 
   start = time.time()
