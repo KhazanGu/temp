@@ -15,6 +15,9 @@ with open(file_path, 'r') as file:
 
 print(file_content)
 
+key = file_content.rstrip("\n")
+
+
 def grammary(client, text):
 
   start = time.time()
@@ -63,5 +66,5 @@ def grammary(client, text):
 
 if __name__ == '__main__':
   arg1 = input("Enter the first argument: ")
-  client = OpenAI(api_key=os.environ.get(file_content, file_content))
+  client = OpenAI(api_key=os.environ.get(key, key))
   grammary(client, arg1)
