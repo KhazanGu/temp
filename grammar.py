@@ -31,7 +31,7 @@ def grammary(client, text):
 
   content4 = "If the sentence has incorrect grammar, the value of the error key should be the reason for incorrect grammar, else the value should be an empty string." 
 
-  content5 = "If the sentence has incorrect grammar, the value of the error_words key should be the words for incorrect grammar, else the value should be an empty string." 
+  content5 = "If the sentence has incorrect grammar, the value of the error_words key should be those incorrect grammar words, else the value should be an empty string." 
 
   beg = [
       {"role": "system", "content": "You are an english teacher"},
