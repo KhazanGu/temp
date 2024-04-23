@@ -45,7 +45,7 @@ def grammary(client, text):
   print(beg)
   
   completion = client.chat.completions.create(
-    model="gpt-3.5-turbo",
+    model="gpt-3.5-turbo-1106",
     messages=beg
   )
   
