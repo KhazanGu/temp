@@ -14,9 +14,6 @@ beg = [
     {"role": "user", "content": "Please output the result with the JSON formate like: {\"content\": \"user\", \"recommend\": \"server\", \"explain\": \"reasion\"}, the vaule of the content key should be the \"I would like have one cup of office\", the vaule of the recommend key should be the recommend sentence, the vaule of the explain key should be the explain sentence."} 
   ]
 
-
-
-
 print(beg)
 
 completion = client.chat.completions.create(
