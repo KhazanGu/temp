@@ -2,7 +2,7 @@ from openai import OpenAI
 import time
 import os
 
-def grammary(client, text)
+def grammary(client, text):
 
   start = time.time()
   print(start)
