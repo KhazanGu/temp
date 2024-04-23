@@ -9,7 +9,6 @@ start = time.time()
 print(start)
 
 beg = [
-    {"role": "system", "content": "You are an english teacher"},
     {"role": "user", "content": "Please help me generate 100 sentences that are all incorrect grammar."},
   ]
 
@@ -17,6 +16,7 @@ print(beg)
 
 completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
+  response_format={ "type": "json_object" },
   messages=beg
 )
 
