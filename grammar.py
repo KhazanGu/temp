@@ -2,6 +2,9 @@ from openai import OpenAI
 import time
 import os
 
+# Get the current directory
+current_directory = os.getcwd()
+
 def grammary(client, text):
 
   start = time.time()
